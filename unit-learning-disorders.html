@@ -17,6 +17,14 @@
   .ld-list li{ background: var(--ivory-deep); border:1px solid var(--line); border-radius: var(--radius-md); padding: 16px 20px; color: var(--ink-soft); line-height:1.9; }
   .ld-list li b{ color: var(--teal-deep); }
   @media (max-width: 760px){ .ld-box{ padding: 30px 22px; } }
+  .team-title{ text-align:center; margin-bottom:28px; }
+  .team-title .kicker{ color: var(--honey-deep); font-weight:700; display:block; margin-bottom:6px; }
+  .team-title h2{ margin:0; }
+  .team-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; align-items:start; }
+  .team-grid figure{ margin:0; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line); box-shadow:0 14px 32px rgba(18,56,48,0.12); background:var(--white); }
+  .team-grid img{ width:100%; height:auto; display:block; }
+  .team-grid figure.tall{ grid-column:1 / -1; justify-self:center; width:50%; }
+  @media (max-width:760px){ .team-grid{ grid-template-columns:1fr; } .team-grid figure.tall{ width:100%; } }
 </style>
 </head>
 <body>
@@ -77,6 +85,22 @@
     <div class="wrap">
       <div class="doctor-note">
         <p><b>رؤية الوحدة:</b> تمكين كل طفل من اكتشاف قدراته وتطوير مهاراته، وتجاوز الصعوبات التي تعوق تعلمه، للوصول إلى أفضل مستوى ممكن من النجاح الأكاديمي والاستقلالية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="wrap">
+      <div class="team-title">
+        <span class="kicker">💛 فريقنا</span>
+        <h2>فريق وحدة اضطرابات التعلم</h2>
+      </div>
+      <div class="team-grid">
+        <figure><img src="assets/team/team-basmala-ahmed.jpg" alt="أ/ بسملة أحمد - مشرفة وحدة اضطرابات التعلم" loading="lazy"></figure>
+        <figure><img src="assets/team/team-fatma-elzahraa.jpg" alt="أ/ فاطمة الزهراء أحمد عبد العزيز - أخصائية اضطرابات التعلم - فرع السيوف" loading="lazy"></figure>
+        <figure><img src="assets/team/team-heba-allah-ayman.jpg" alt="أ/ هبة الله أيمن - أخصائية اضطرابات التعلم - فرع العجمي ومحرم بك" loading="lazy"></figure>
+        <figure><img src="assets/team/team-mona-hisham.jpg" alt="أ/ منة هشام محمد - أخصائية اضطرابات التعلم - فرع 45" loading="lazy"></figure>
+        <figure class="tall"><img src="assets/team/team-marina-milad.jpg" alt="أ/ مارينا ميلاد عازر - أخصائية اضطرابات التعلم - فرع سيدي بشر" loading="lazy"></figure>
       </div>
     </div>
   </section>
